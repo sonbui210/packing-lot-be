@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group = 'com.hoanganhbk'
+group = 'com.sobu'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -31,7 +31,7 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	implementation 'io.jsonwebtoken:jjwt:0.9.1'
-	implementation 'org.json:json:20180813'
+	implementation 'org.json:json:20230227'
 	compile('org.springframework.boot:spring-boot-starter-mail')
 	compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
 }
@@ -48,7 +48,7 @@ processResources {
 }
 
 bootJar {
-	mainClassName = 'com.hoanganhbk.schoolBus.SchoolBusApplication'
+	mainClassName = 'com.sobu.parkinglot.SchoolBusApplication'
 	from ('/Users/nguyenhoanganh/Desktop/Projects/school-bus-tracking/dist') {
 		into 'public'
 	}
